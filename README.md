@@ -1,2 +1,2 @@
-# gradle-plugin-7z
+# gradle-task-7z
 Gradle Task for creating 7z archives.
