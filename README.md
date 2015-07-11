@@ -1,2 +1,2 @@
-# gradle-plugin-7z
-Gradle Plugin for 7z archiving and unarchiving.
+# gradle-task-7z
+Gradle Task for creating 7z archives.
