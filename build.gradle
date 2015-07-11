@@ -1,0 +1,35 @@
+buildscript {
+    repositories {
+        mavenCentral()
+	mavenLocal()
+    }
+}
+
+apply plugin: 'groovy'
+apply plugin: 'eclipse'
+
+defaultTasks 'tasks'
+
+group='net.koiosmedia'
+version = '0.0.1'
+
+dependencies {
+    compile gradleApi()
+    compile localGroovy()
+}
+
+repositories {
+    mavenCentral()
+}
+
+uploadArchives {
+	repositories {
+		mavenLocal()
+	}
+}
+
+//------------------------------Tasks------------------------------
+
+task wrapper(type: Wrapper) {
+	gradleVersion = '2.4'
+}
