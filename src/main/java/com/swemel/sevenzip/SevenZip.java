@@ -145,7 +145,7 @@ public class SevenZip implements Runnable {
     }
 
 
-    public SevenZip(String archiveName, File... files) throws IOException {
+    public SevenZip(String archiveName, File[] files) throws IOException {
         generateUpdateItems(files);
         outStream = new OutStream_(new File(archiveName), "rw");
     }
